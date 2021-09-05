@@ -7,7 +7,7 @@ services:
       - 8084:8084
     privileged: true
     volumes:
-      - ./:/a@@:cached
+      - ./:/app:cached
     tty: true
     stdin_open: true
     command: /bin/sh
