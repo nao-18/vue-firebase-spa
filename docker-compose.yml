@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  web:
+    container_name: web
+    build: ./docker/web
+    ports:
+      - 8084:8084
+    privileged: true
+    volumes:
+      - ./:/a@@:cached
+    tty: true
+    stdin_open: true
+    command: /bin/sh
