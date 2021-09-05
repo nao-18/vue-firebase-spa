@@ -4,7 +4,7 @@ services:
     container_name: web
     build: ./docker/web
     ports:
-      - 8084:8084
+      - 8084:8080
     privileged: true
     volumes:
       - ./:/app:cached
